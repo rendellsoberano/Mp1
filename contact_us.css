@@ -1,0 +1,95 @@
+/* Body */
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+/* Navigation Bar */
+#nav_bar {
+  background-color: rgb(0, 45, 40);
+  background-attachment: fixed;
+}
+/* Navigation Logo */
+#nav_logo {
+  width: 250px;
+}
+.nav_item {
+  color: whitesmoke;
+}
+
+/* Banner */
+#banner_img {
+  max-height: 350px;
+}
+#contact_us_container {
+  padding-bottom: 20px;
+}
+
+/* Contact Us */
+#contact_text {
+  color: rgb(0, 201, 33);
+  text-align: center;
+}
+#map_section {
+  align-items: center;
+  text-align: center;
+}
+#map_content {
+  width: 100%;
+  height: 50dvh;
+}
+
+/* Footer */
+footer {
+  position: static;
+  bottom: 0;
+  padding-top: 15px;
+  background-color: rgb(0, 45, 40);
+}
+
+#footer_logo {
+  width: 160px;
+}
+#footer_list p a {
+  text-decoration: none;
+  color: rgba(220, 228, 217, 0.601);
+}
+#footer_list p a:hover {
+  color: rgb(0, 201, 33);
+}
+#footer_middle {
+  margin-top: 60px;
+  color: rgba(220, 228, 217, 0.601);
+  font-size: 20px;
+  text-align: justify;
+}
+.footer_middle_icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: rgba(220, 228, 217, 0.601);
+  border-radius: 50%;
+  border-style: solid;
+}
+#footer_right {
+  margin-top: 60px;
+  color: rgba(220, 228, 217, 0.601);
+}
+.footer_right_icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: rgba(220, 228, 217, 0.601);
+  border-radius: 50%;
+  border-style: solid;
+}
+.footer_right_link:link {
+  color: rgba(220, 228, 217, 0);
+}
+.footer_right_link:hover {
+  color: rgb(0, 201, 33);
+}
+#footer_text {
+  text-align: justify;
+}
+#footer_bottom {
+  color: rgba(220, 228, 217, 0.601);
+}

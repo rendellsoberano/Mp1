@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact_us.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="icon"
+      type="img/x-icon"
+      href="img/light_logo.png"
+      aria-multiline="Page Icon"
+      id="page_icon"
+    />
+    <title>Green Engineering</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="nav_bar">
+      <div class="container-fluid">
+        <!-- Navbar Logo -->
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.png" alt="Green Engineering Logo" id="nav_logo"
+        /></a>
+        <!-- Navbar Logo -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav_menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Item-->
+        <div class="collapse navbar-collapse" id="nav_menu">
+          <ul class="navbar-nav ms-auto fw-bold text-center">
+            <li>
+              <a class="nav-link" href="index.html"
+                ><span class="nav_item">HOME</span></a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="about_us.html"
+                ><span class="nav_item">ABOUT US</span></a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="portfolio.html"
+                ><span class="nav_item">PORTFOLIO</span></a
+              >
+            </li>
+            <li>
+              <a class="nav-link active" href="contact_us.html">CONTACT US</a>
+            </li>
+            <!-- Modal Appointment Start -->
+            <div id="appointment_button">
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#set_appointment"
+              >
+                SET AN APPOINTMENT
+              </button>
+            </div>
+            <!-- Modal Appointment Start -->
+            <li>
+              <div class="row col-lg-12">
+                <div
+                  class="modal fade"
+                  id="set_appointment"
+                  tabindex="-1"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5">
+                          Please fill up the form.
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body" id="modal_appointment">
+                        <form>
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="First name: Juan"
+                                aria-label="First name"
+                              />
+                            </div>
+                            <div class="col-lg-6">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Last name: Dela Cruz"
+                                aria-label="Last name"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label
+                              for="costumer_email"
+                              class="form-label"
+                            ></label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="costumer_email"
+                              aria-describedby="email_help"
+                              placeholder="Email address: juandelacruz@gmail.com"
+                            />
+
+                            <div id="email_help" class="form-text">
+                              We'll never share your email with anyone else.
+                            </div>
+                          </div>
+
+                          <div class="mb-3">
+                            <label
+                              for="costumer_number"
+                              class="form-label"
+                            ></label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="costumer_number"
+                              aria-describedby="number_help"
+                              placeholder="Phone Number"
+                            />
+                            <div id="number_help" class="form-text">
+                              <strong>Input "eleven" numeric keys only.</strong>
+                              We'll send a message for approval.
+                            </div>
+                          </div>
+
+                          <div class="mb-3">
+                            <label
+                              for="costumer_address"
+                              class="form-label"
+                            ></label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="costumer_address"
+                              aria-describedby="adress_help"
+                              placeholder="Complete Address"
+                            />
+                            <div id="address_help" class="form-text">
+                              Type
+                              home#,street,subdivion,brgy,town,province,zip#
+                            </div>
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="text_message" class="form-label"
+                              >Message</label
+                            >
+                            <textarea
+                              class="form-control"
+                              id="text_message"
+                              aria-describedby="message_help_help"
+                              rows="3"
+                            ></textarea>
+                            <div id="message_help" class="form-text">
+                              This message will be forwarded into our support
+                              team.
+                            </div>
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="check_robot"
+                              tabindex="-1"
+                            />
+                            <label class="form-check-label" for="check_robot"
+                              >Check if you're not a Robot!</label
+                            >
+                          </div>
+                          <div class="mb-3">
+                            <button type="submit" class="btn btn-success">
+                              Submit
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer" id="modal_close">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Modal Appointment End -->
+          </ul>
+        </div>
+        <!-- Navbar Item -->
+      </div>
+    </nav>
+
+    <!-- Navbar End-->
+
+    <!-- Banner Start-->
+    <div class="w-110">
+      <div class="container-fluid">
+        <div class="row" id="banner_container">
+          <img src="img/banner.png" id="banner_img" />
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Contact Us Start -->
+    <div class="container-fluid" id="contact_us_container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 id="contact_text">CONTACT US</h1>
+        </div>
+        <div class="col-lg-6">
+          <h2 id="contact_text">Message Us</h2>
+          <form>
+            <div class="row">
+              <div class="col-lg-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name: Juan"
+                  aria-label="First name"
+                />
+              </div>
+              <div class="col-lg-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name: Dela Cruz"
+                  aria-label="Last name"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="costumer_email" class="form-label"></label>
+              <input
+                type="email"
+                class="form-control"
+                id="costumer_email"
+                aria-describedby="email_help"
+                placeholder="Email address: juandelacruz@gmail.com"
+              />
+              <div id="email_help" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="text_message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="text_message"
+                aria-describedby="message_help_help"
+                rows="3"
+              ></textarea>
+              <div id="message_help" class="form-text">
+                This message will be forwarded into our support team.
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="check_robot"
+                tabindex="-1"
+              />
+              <label class="form-check-label" for="check_robot"
+                >Check if you're not a Robot!</label
+              >
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6" id="map_section">
+          <h2 id="contact_text">Map Location</h2>
+          <iframe
+            id="map_content"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61776.70144048964!2d120.9383599!3d14.5965778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1701006541352!5m2!1sen!2sph"
+            style="border: 0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p>Drag or move using arrow keys.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us End -->
+
+    <!-- Footer Start-->
+    <footer class="w-100">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 text-center" id="footer_left">
+            <a href="#"
+              ><img
+                src="img/logo.png"
+                id="footer_logo"
+                alt="Green Engineering Logo"
+            /></a>
+            <div id="footer_list">
+              <p>
+                <a href="#" class="nav-link disabled"><del>Careers</del></a>
+              </p>
+              <p><a href="#">Management Team</a></p>
+              <p><a href="#">Corporate Documents</a></p>
+              <p><a href="#">Events and Conferences</a></p>
+              <p><a href="#">Privacy Statement</a></p>
+              <p><a href="#">License and Permits</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4" id="footer_middle">
+            <p>
+              <img
+                src="img/location.png"
+                alt="Location Icon"
+                class="footer_middle_icon"
+              />
+              Manila, Metro Manila
+            </p>
+            <p>
+              <img
+                src="img/telephone.png"
+                alt="Telephone Icon"
+                class="footer_middle_icon"
+              />
+              (02) 7900-43**
+            </p>
+            <p>
+              <img
+                src="img/email.png"
+                alt="
+              Email Icon"
+                class="footer_middle_icon"
+              />
+              services@ge.com
+            </p>
+          </div>
+          <div class="col-lg-4" id="footer_right">
+            <h3>About Us</h3>
+            <p id="footer_text">
+              Green Engineering focuses on what makes the product/solutions
+              “sustainable” or “green” , where they can be found, creatively
+              expound on them so that our audience can easily understand the
+              significance of green building by advocating these certified green
+              products and solutions.
+            </p>
+            <div>
+              <a
+                class="footer_right_link"
+                href="https://www.linkedin.com/home"
+                target="_blank"
+                ><img
+                  src="img/linkedin.png"
+                  alt="Linked-in Icon"
+                  class="footer_right_icon"
+              /></a>
+              <a
+                class="footer_right_link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                ><img
+                  src="img/facebook.png"
+                  alt="Facebook Icon"
+                  class="footer_right_icon"
+              /></a>
+              <a
+                class="footer_right_link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                ><img
+                  src="img/instagram.png"
+                  alt="Instagram Icon"
+                  class="footer_right_icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center mt-3" id="footer_bottom">
+          <p>© 2023 Green Engineering from Rendell Soberano</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End-->
+  </body>
+</html>
